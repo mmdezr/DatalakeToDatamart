@@ -16,7 +16,6 @@ public class APIResponse {
             String from = request.queryParams("from");
             String to = request.queryParams("to");
             List<APITemperature> APITemperatures = TemperatureManager.getPlacesWithMaxAPITemperature(from, to);
-            System.out.println("apitemperatures"+APITemperatures);
             return TemperatureManager.toJson(APITemperatures);
         });
 
