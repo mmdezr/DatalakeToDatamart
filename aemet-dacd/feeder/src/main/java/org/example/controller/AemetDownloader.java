@@ -15,7 +15,7 @@ public class AemetDownloader implements DataDownloader {
     Set<WeatherEvent> events = new HashSet<>();
 
     public String get(String url) throws IOException {
-        String apiKey = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtbWRlenJAZ21haWwuY29tIiwianRpIjoiYjY0ZDIyMjQtNDY3ZC00ZWY1LTllNTktZTMwOGQxYjJhNGRjIiwiaXNzIjoiQUVNRVQiLCJpYXQiOjE2NzMzMDk1OTgsInVzZXJJZCI6ImI2NGQyMjI0LTQ2N2QtNGVmNS05ZTU5LWUzMDhkMWIyYTRkYyIsInJvbGUiOiIifQ.X9Yp0refUQM8hCqrzLc_WoyyYiZkjZndlhzlLoXIIl0";
+        String apiKey = "Enter your API Key";
         return Jsoup.connect(url)
                 .validateTLSCertificates(false)
                 .timeout(15000)
