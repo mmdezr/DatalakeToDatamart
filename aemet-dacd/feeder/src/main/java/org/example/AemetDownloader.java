@@ -13,9 +13,7 @@ public class AemetDownloader implements DataDownloader {
     Set<WeatherEvent> events = new HashSet<>();
 
     public String get(String url) throws IOException {
-        Properties properties = new Properties();
-        properties.load(new FileInputStream("topsecret.properties"));
-        String apiKey = properties.getProperty("apiKey");
+        String apiKey = "Your apiKey";
         return Jsoup.connect(url)
                 .validateTLSCertificates(false)
                 .timeout(15000)
