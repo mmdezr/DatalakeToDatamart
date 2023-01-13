@@ -19,6 +19,6 @@ public class Main {
             }
         };
         Timer timer = new Timer();
-        timer.schedule(task, 0, 60 * 60 * 1000);
+        timer.schedule(task, 0, 24 * 60 * 60 * 1000);
     }
 }
